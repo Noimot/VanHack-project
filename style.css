@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header design */
+header{
+    background: #e6ffff;
+    position: fixed;
+    top: 0;
+    height: 10%;
+    width: 100%;
+    border-bottom: 2px solid ;
+}
+
+header img {
+    margin: 8px 0 0 40px;
+}
+
+header a{
+    margin: 0 0 30px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0c4e7a;
+    font-weight: 600;
+}
+
+header a:hover{
+    color:  #4db8ff;
+}
+
+/*main body*/
+.main-body{
+    padding: 0 40px; 
+}
+
+.meet-up{
+    width: 100%;
+    height: 40%;
+    /*background: green;*/
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    color: #0c4e7a;
+}
+
+.meet-up h4 {
+    text-align: center;
+}
+
+.meet-up p {
+    margin-top: 15px;
+}
+
+.button{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.button button{
+    padding: 12px;
+    background: #4db8ff;
+    border: none;
+    border-radius: 2px;
+}
+
+.vanhack-events{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 30px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* leap section */
+.leap, .recruiting, .VanHackathon{
+    height: 300px;
+    width: 100%;
+}
+
+.leap-img{
+    background: linear-gradient(180deg,#4db8ff,  #0c4e7a);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+.leap-img img{
+    border-radius: 20%;
+    border: 2px dotted#4db8ff;
+}
+.leap-para a{
+    text-decoration: none;
+    color: #4db8ff;
+    font-style: italic;
+}
+
+.leap-para p, .recruiting-para p{
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.leap-para span{
+    color: #0c4e7a;
+    font-weight: 600;
+}
+
+/* recruiting section */
+.recruiting-img{
+    background: #fff;
+    height: 150px;
+}
+.recruiting-para{
+    /*background: linear-gradient(120deg, #e6fffa,#4dc3ff);*/
+    height: 150px;
+    font-size: 16px;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.recruiting span{
+    font-size: 30px;
+    font-weight: 600;
+    color: #4db8ff;
+}
+
+/* vanhackathon section */
+.vanhackathon-img{
+    background: linear-gradient(90deg,#0c4e7a, #4db8ff);
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+.vanhackathon-img h2{
+    font-size: 35px;
+}
+span{
+    color:  #ccfff5;
+}
+
+.vanhackathon-para{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+}
+.vanhackathon-para p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.vanhackathon-para h2{
+    padding-bottom: 10px;
+    color: #0c4e7a;
+}
+.vanhackathon-para button, .premium-webinar button{
+    padding: 5px 15px;
+    margin-top: 10px;
+    border: none;
+    background:  #ccfff5;
+    color: #0c4e7a;
+}
+
+/* hackathon section animation */
+@keyframes animation{
+    50%{
+        background: #cceeff;
+        color: #fff;
+    }
+    50%{
+        background:#0c4e7a;
+        
+    }
+}
+
+/* vanHack premium webinar */
+.premium-webinar{
+    height: 40%;
+    margin-top: 30px;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+}
+.premium-webinar h3{
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.3em;
+}
+.premium-webinar h2{
+    font-size: 3em;
+    word-spacing: 0.2em;
+    margin-left: 20px;
+}
+.premium-webinar p {
+    margin-top: 20px;  
+    margin-left: 20px;
+}
+.premium-webinar button{
+    background-color: #0c4e7a;
+    font-weight: 600;
+    color: white;
+    margin-left: 120px;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+/* vanhack webinar */
+.vanhack-webinar{
+    height: 300px;
+    margin-top: 10px;
+}
+.vanhack-webinar div:first-child{
+    background: linear-gradient( 115deg, rgba(241, 241, 243, 0.8), rgba(82, 170, 245, 0.9) ) ,url(VanHack-logos/webinarr.logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 200px;
+}
+
+.open-webinar{
+    border-radius: 5px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.open-webinar h4{
+    font-size: 1.3em;
+}
+.open-webinar button{
+    background-color: #0c4e7a;
+    color: white;
+    padding: 10px;
+}
+
+/* page responsiveness */
+@media (max-width: 650px){
+   body {
+       background: rgb(241, 241, 206);
+     
+   }
+   header{
+       height:10%;
+       background: rgb(241, 241, 206);
+   }
+   header img{
+       margin: 2px 2px 0 0;
+       width: 80px;
+   }
+   header a{
+       margin: 0 0 5px 5px;
+       font-size: 12px;
+   }
+   .vanhack-events{
+       display: flex;
+       flex-direction: column;
+   }
+   .recruiting-img{
+       margin-top: 40px;
+   }
+   .premium-webinar{
+       display: flex;
+       flex-direction: column-reverse;
+   }
+   .premium-webinar img{
+       width: 100%;
+       margin-left: 20px;
+   }
+   .premium-webinar h2{
+       font-size: 2.5em;
+   }
+   .open-webinar{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding: 5px 0;
+   }
+   .open-webinar button{
+       width: 40%
+   }
+   .open-webinar h4{
+       font-size: 1.0em;
+   }
+}
+
+@media (max-width: 900px){
+    .premium-webinar{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .premium-webinar img{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
